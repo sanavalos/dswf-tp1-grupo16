@@ -89,6 +89,7 @@ body {
   grid-area: skills;
   background: black;
   color: white;
+  box-shadow: none !important;
 }
 
 .music-panel {
