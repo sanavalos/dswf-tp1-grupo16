@@ -8,12 +8,12 @@ const tituloVariable = document.getElementById('titulo-variable');
 const buttons = document.querySelectorAll("#integrantes .card button");
 const body = document.body;
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', function handleBurger(){
     navLinks.classList.toggle('show');
 });
 
 links.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', function handleBitacora(e){
         e.preventDefault();
 
         const target = link.getAttribute('href');
@@ -43,7 +43,7 @@ links.forEach(link => {
     });
 });
 
-themeToggle.addEventListener('change', () => {
+themeToggle.addEventListener('change', function handleThemeToggle(){
     body.classList.toggle('dark', themeToggle.checked);
 });
 
@@ -57,7 +57,7 @@ const urls = [
 ];
 
 buttons.forEach((button, index) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", function redirectTo(){
     window.location.href = urls[index];
   });
 });

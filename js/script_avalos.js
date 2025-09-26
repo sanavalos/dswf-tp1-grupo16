@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function typeWriterEffect() {
  const heroTitle = document.querySelector(".hero-title");
  const originalText = heroTitle.textContent;
  heroTitle.textContent = "";
