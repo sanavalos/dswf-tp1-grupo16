@@ -1,0 +1,86 @@
+/* Tipografía moderna */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Paneles */
+.panel {
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+}
+
+/* Títulos */
+.panel-title, .hero-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulos */
+.hero-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #bbbbbb;
+}
+
+/* Habilidades (grid) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skill-item {
+  background: #2c2c2c;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  color: #00ffae;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.skill-item:hover {
+  background: #00ffae;
+  color: #1e1e1e;
+}
+
+/* Botones */
+.page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: #00d4ff;
+  color: #0f0f0f;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.page-button:hover {
+  background: #00aacc;
+}
+
