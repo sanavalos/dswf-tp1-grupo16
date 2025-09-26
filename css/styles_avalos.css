@@ -254,6 +254,13 @@ body {
   z-index: -1;
 }
 
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @keyframes pageCurl {
   0% {
     width: 100px;
@@ -304,6 +311,11 @@ body {
 
   .wrapper {
     margin-top: none;
+  }
+
+  .bottom-buttons {
+    gap: 2rem;
+    justify-content: center;
   }
 }
 
