@@ -25,13 +25,13 @@ links.forEach(link => {
             } else {
                 bitacoraContent.style.display = 'none';
                 mainContent.style.display = 'block';
-                tituloVariable.textContent = 'NOMBRE DEL EQUIPO';
+                tituloVariable.textContent = 'REACTIVOS';
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         } else {
             bitacoraContent.style.display = 'none';
             mainContent.style.display = 'block';
-            tituloVariable.textContent = 'NOMBRE DEL EQUIPO';
+            tituloVariable.textContent = 'REACTIVOS';
             const section = document.querySelector(target);
             if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
