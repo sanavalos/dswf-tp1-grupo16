@@ -1,0 +1,476 @@
+/* === Fuentes ===
+Waltograph se carga desde archivo local en waltograph.css
+Otras fuentes se cargan desde Google Fonts en el HTML
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* === FONDOS === */
+body.disney-activa {
+  background-color: #fceabb;
+}
+
+body.merlina-activa {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+/* === PARTICULAS === */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* === TARJETA === */
+.tarjeta {
+  width: 360px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  padding-bottom: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.boton-inicio {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.boton-inicio a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-inicio i {
+  font-size: 20px;
+}
+
+.disney .boton-inicio a {
+  background-color: #fce4ec;
+  color: #6a1b9a;
+  font-family: 'Great Vibes', cursive;
+  box-shadow: 0 0 10px #f8bbd0;
+}
+
+.disney .boton-inicio i {
+  color: #ba68c8;
+}
+.merlina .boton-inicio a {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  font-family: 'Pirata One', cursive;
+  border: 2px solid #555;
+  box-shadow: 0 0 10px #000;
+}
+
+.merlina .boton-inicio i {
+  color: #888;
+}
+
+
+
+
+
+/* Para modo Merlina (tarjeta más oscura) */
+body.merlina-activa .tarjeta {
+  background-color: #2b2b2b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* === CONTENIDO === */
+.contenido {
+  transition: all 0.4s ease;
+}
+
+.oculto {
+  display: none;
+}
+/* === AVATAR === */
+.avatar {
+  width: 80px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 3px solid;
+  box-shadow: 0 0 8px;
+}
+
+.avatar.disney {
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px #ffb6c1;
+}
+
+.avatar.merlina {
+  border-color: #8b0000;
+  box-shadow: 0 0 8px #8b0000;
+  filter: grayscale(40%) contrast(120%);
+}
+
+.avatar {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.nombre-merlina {
+  margin: 0.2rem 0 0.8rem 0;
+}
+
+/* === FUENTES Y ESTILOS === */
+@font-face {
+  font-family: 'Waltograph';
+  src: url('../fonts/WaltographUI.ttf') format('truetype');
+}
+
+.disney-font {
+  font-family: 'Waltograph', cursive;
+  font-size: 16px;
+  background: linear-gradient(to right, #c084fc, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+@keyframes brilloDorado {
+  0% { text-shadow: 0 0 8px rgba(255,215,0,0.4), 0 0 12px rgba(255,215,0,0.6); }
+  50% { text-shadow: 0 0 14px rgba(255,215,0,0.8), 0 0 24px rgba(255,215,0,1); }
+  100% { text-shadow: 0 0 8px rgba(255,215,0,0.4), 0 0 12px rgba(255,215,0,0.6); }
+}
+
+.nombre-disney {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
+  color: gold;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+  margin: 0.5rem 0 1rem 0;
+  animation: brilloDorado 2.5s infinite ease-in-out;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.nombre-merlina {
+  font-family: 'Gideon Roman', serif;
+  font-size: 2.2rem;
+  color: #c41e3a;
+  text-shadow: 0 0 8px rgba(0,0,0,0.9), 0 0 12px #600;
+  text-align: center;
+  animation: latido 1.2s infinite ease-in-out;
+}
+/* === UBICACIÓN === */
+.icono-up {
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre la imagen y el texto */
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-top: -20px;
+}
+
+.icono-up {
+  width: 40px;
+  height: auto;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.icono-up {
+  animation: flotar 3s infinite ease-in-out;
+}
+
+.info-disney  {
+  margin-bottom: -10px; 
+} 
+  
+.disney-font {
+  margin-top: 0.1rem;
+}
+
+/* === CHIPS === */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pastilla {
+  display: inline-block;
+  background-color: #fff0f5;
+  border: 1px solid #ffb6c1;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin: 4px;
+  font-size: 13px;
+  color: #d63384;
+  transition: background-color 0.3s ease;
+}
+
+.pastilla:hover {
+  background-color: #ffe4ec;
+}
+
+
+
+.avatar {
+  margin-bottom: 4px;
+}
+
+.nombre-merlina {
+  margin: 0.2rem 0 0.6rem 0;
+}
+/* === CHIPS MERLINA === */
+.chips-merlina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  gap: 6px;
+}
+
+.pastilla-merlina {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #600;
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 11px;
+  color: #f0f0f0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+  margin: 2px;
+}
+
+.pastilla-merlina:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* === TEXTOS EXTRA === */
+.merlina-font {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 17px;
+  color: #c41e3a;
+  text-shadow: 0 0 3px #000000;
+  margin-bottom: 4px;
+}
+
+.magico {
+  font-family: 'Raleway', sans-serif;
+  color: #ff69b4;
+  font-size: 14px;
+  text-shadow: 0 0 2px #ffb6c1;
+}
+
+.sombrio {
+  font-family: 'Playfair Display', serif;
+  color: #d0d0d0;
+  font-size: 14px;
+}
+
+.info-merlina,
+.chips-merlina,
+.merlina-font {
+  margin-bottom: 6px;
+}
+
+
+
+.info-merlina {
+  font-family: 'Gideon Roman', serif;
+  font-size: 13px;
+  color: #f0f0f0;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #600;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin: 12px 0 4px 0; /* sube la sección y achica el espacio inferior */
+  line-height: 1.3;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+
+
+
+.info-disney {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+
+
+.info-disney {
+  color: #ff69b4;
+  text-shadow: 0 0 2px #ffc0cb;
+}
+
+/* === BOTÓN CON EFECTO LATIDO === */
+
+@keyframes latidoBoton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(255, 20, 147, 0.6);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.9);
+  }
+}
+
+
+button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 12px rgba(255, 20, 147, 0.6);
+  text-shadow: 0 0 4px #fff, 0 0 8px #ff69b4;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  animation: latidoBoton 0.6s ease-in-out;
+}
+
+@keyframes latidoBoton {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 12px rgba(255, 20, 147, 0.6);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.9);
+  }
+}
+
+
+body.disney-activa button {
+  background-color: #111; /* negro profundo */
+  color: #ff69b4; /* rosa brillante para contraste */
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+  text-shadow: 0 0 4px #ff69b4;
+}
+
+body.merlina-activa button {
+  background-color: #ff69b4;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 4px #fff;
+}
+
+
+
+.tarjeta {
+  min-height: 540px;
+  padding-bottom: 120px;
+}
+
+body {
+  overflow-y: auto;
+}
+
+/* Breakpoint para móviles pequeños (menos de 400px) */
+@media (max-width: 400px) {
+  .tarjeta {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .avatar {
+    width: 60px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Breakpoint para pantallas medianas/tablets (hasta 900px) */
+@media (max-width: 900px) {
+  .tarjeta {
+    width: 80%;
+  }
+
+  .avatar {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Breakpoint para escritorio grande (más de 1200px) */
+@media (min-width: 1200px) {
+  .tarjeta {
+    width: 400px;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
