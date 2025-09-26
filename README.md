@@ -38,17 +38,37 @@ Para evitar el efecto cascada en las hojas de estilo se decidio modular los arch
 ## JAVASCRIPT
 ```JavaScript
 // index.js
+
 handleBurger() // mostrar/ocultar opciones al hacer click
 handleBitacora(e) // mostrar y/o ocultar la sección de bitacora
 handleThemeToggle() // aplicar/eliminar clase "dark" a tag body para el manejo de temas
 redirectTo() // agregar evento click a los botones de las tarjetas para rediriger a la url correspondiente
-
 ```
 
 ```js
 // script_avalos.js
 
 typeWriterEffect() // renderizar letras cada 100 milisegundos
+```
+
+```js
+// script_aixa.js
+
+```
+
+```js
+// script_paguaga.js
+
+```
+
+```js
+// script_sanchez.js
+
+```
+
+```js
+// script_ivanna.js
+
 ```
 
 ## LINKS
