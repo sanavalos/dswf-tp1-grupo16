@@ -5,6 +5,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const mainContent = document.getElementById('main-content'); 
 const bitacoraContent = document.getElementById('bitacora-content');
 const tituloVariable = document.getElementById('titulo-variable');
+const buttons = document.querySelectorAll("#integrantes .card button");
 const body = document.body;
 
 hamburger.addEventListener('click', () => {
@@ -47,5 +48,17 @@ themeToggle.addEventListener('change', () => {
 });
 
 
+const urls = [
+  "./avalos.html", 
+  "./aixa.html", 
+  "./paguaga.html", 
+  "./sanchez.html", 
+  "./ivanna.html"
+];
 
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    window.location.href = urls[index];
+  });
+});
 
