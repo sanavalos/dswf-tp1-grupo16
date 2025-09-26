@@ -49,6 +49,6 @@ typeWriter() // renderiza letras cada 100 milisegundos
 
 ## LINKS
 
-Deploy: [dswf-tp1-grupo16.vercel.app](https://www.dswf-tp1-grupo16.vercel.app)
+Deploy: [front-reactivos.vercel.app](https://front-reactivos.vercel.app)
 
 GitHub: [dswf-tp1-grupo16](https://github.com/sanavalos/dswf-tp1-grupo16)
