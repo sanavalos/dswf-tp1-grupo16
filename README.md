@@ -74,6 +74,11 @@ cerrarModal() // Obtiene el video, limpia el src para detenerlo, y permite ocult
 ```js
 // script_ivanna.js
 
+flipCard() // Al hacer click en cualquier lugar de la tarjeta, esta realiza una animación de "voltearse" para revelar el contenido que había detrás de ella. Varía indefinidamente entre las posiciones del frente y el dorso de dicha tarjeta.
+playButton.addEventListener(click) // Reproduce y reanuda una canción al hacerle click al símbolo de "play" en la tarjeta del lado del frente, la cual suena en loop hasta que se la detenga.
+pauseButton.addEventListener(click) // Pausa la canción que está siendo reproducida.
+
+Tanto playButton como pauseButton no son afectados por el click de flipCard. Al hacer click en estas secciones, la tarjeta se mantiene en su lugar.
 ```
 
 ## LINKS
