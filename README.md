@@ -53,6 +53,11 @@ typeWriterEffect() // renderizar letras cada 100 milisegundos
 
 ```js
 // script_aixa.js
+Interactividad con JavaScript
+
+- `alternarEstilo()`: permite cambiar entre la versión "Disney" y "Merlina" de la tarjeta. Cambia clases, contenido visible y partículas de fondo.
+- `DOMContentLoaded`: al cargar la página, se activa automáticamente el estilo "Disney" y se muestran partículas con estrellas.
+- Se muestra una alerta personalizada al cambiar de estilo (diferente para cada versión).
 
 ```
 
