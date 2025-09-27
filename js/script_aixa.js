@@ -73,7 +73,27 @@ function alternarEstilo() {
       retina_detect: true
     });
   }
+
 }
+
+const botonAnteriorDisney = document.getElementById('btn-disney-anterior');
+const botonSiguienteDisney  = document.getElementById('btn-disney-siguiente');
+const botonAnteriorMerlina  = document.getElementById('btn-merlina-anterior');
+const botonSiguienteMerlina = document.getElementById('btn-merlina-siguiente');
+
+botonAnteriorDisney.addEventListener('click', () => {
+    window.location.href = 'avalos.html';
+  });
+  botonSiguienteDisney.addEventListener('click', () => {
+    window.location.href = 'paguaga.html';
+  });
+  botonAnteriorMerlina.addEventListener('click', () => {
+    window.location.href = 'avalos.html';
+  });
+  botonSiguienteMerlina.addEventListener('click', () => {
+    window.location.href = 'paguaga.html';
+  });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const tarjeta = document.getElementById('tarjeta');

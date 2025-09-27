@@ -97,6 +97,31 @@ body.merlina-activa {
 
 
 
+/* Estilo Disney */
+body.disney-activa .btn-atras,
+body.disney-activa .btn-siguiente {
+  background-color: #fff0f5;
+  color: #d63384;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0 0 2px #ffb6c1;
+}
+
+/* Estilo Merlina */
+body.merlina-activa .btn-atras,
+body.merlina-activa .btn-siguiente {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  font-family: 'Gideon Roman', serif;
+  border: 1px solid #600;
+  text-shadow: 0 0 2px #000;
+}
+
+/* Hover mágico */
+.btn-atras:hover,
+.btn-siguiente:hover {
+  transform: scale(1.05);
+}
+
 
 
 /* Para modo Merlina (tarjeta más oscura) */
@@ -418,6 +443,49 @@ body.merlina-activa button {
 
 body {
   overflow-y: auto;
+}
+
+
+
+.avatar-con-flechas {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flecha-derecha {
+  right: 0; 
+  transform: translateY(-50%) translateX(65px);
+}
+
+.flecha-izquierda {
+  left: 0;
+  transform: translateY(-50%) translateX(-50px);
+}
+
+.flecha-izquierda:hover {
+  transform: translateY(-50%) translateX(-50px) scale(1.2);
+  color: #ff1493 !important;
+  animation: none !important;
+}
+
+.flecha-derecha:hover {
+  transform: translateY(-50%) translateX(65px) scale(1.2);
+  color: #ff1493 !important;
+  animation: none !important;
 }
 
 /* Breakpoint para móviles pequeños (menos de 400px) */
