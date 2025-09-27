@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta - Santiago</title>
+  <link rel="stylesheet" href="css/styles_paguaga.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="index.html" class="btn-home">Portada</a>
+  <div class="fondoAnimado"></div>
+
+  <main class="tarjeta">
+
+    <section class="foto">
+      <img src="img/paguaga.png" alt="Avatar Santiago">
+    </section>
+
+    <section class="info">
+      <h1>Santiago Paguaga</h1>
+      <p><strong>Ubicación:</strong> Córdoba, Argentina</p>
+      <p><strong>Edad:</strong> 33</p>
+    </section>
+
+    <section class="habilidades">
+      <h2>Habilidades</h2>
+      <div class="tags">
+        <span class="tag html">HTML</span>
+        <span class="tag css">CSS</span>
+        <span class="tag tailwind">Tailwind</span>
+        <span class="tag javascript">JavaScript</span>
+        <span class="tag vue">Vue.js</span>
+        <span class="tag c">C#</span>
+        <span class="tag java">Java</span>
+        <span class="tag python">Python</span>
+        <span class="tag mysql">MySQL</span>
+        <span class="tag git">Git</span>
+      </div>
+    </section>
+
+    <section class="peliculas">
+      <h2>Películas Favoritas</h2>
+      <div class="slider">
+        <button class="prev" onclick="cambiarPelicula(-1)">&#10094;</button>
+
+        <div class="slide" style="background-image: url('img/el_origen.jpg');">
+          <h3>El Origen</h3>
+          <button onclick="verTrailer('https://www.youtube.com/embed/OCEkhKvm-hU')">Ver Trailer</button>
+        </div>
+
+        <div class="slide" style="background-image: url('img/matrix.jpg');">
+          <h3>Matrix</h3>
+          <button onclick="verTrailer('https://www.youtube.com/embed/OM0tSTEQCQA')">Ver Trailer</button>
+        </div>
+
+        <div class="slide" style="background-image: url('img/joker.jpg');">
+          <h3>Joker</h3>
+          <button onclick="verTrailer('https://www.youtube.com/embed/8ZZ1l7QCVGE')">Ver Trailer</button>
+        </div>
+
+        <button class="next" onclick="cambiarPelicula(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <div id="modalTrailer" class="modal">
+      <div class="modal-content">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <iframe id="trailer" width="100%" height="315" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <section class="musica">
+      <h2>Música Favorita</h2>
+      <div class="spotify">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1zng9uqqXoPkmU05nsAlsw"
+          width="100%" height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1VB4sadHjFcFklHcZuoROi"
+          width="100%" height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+        <iframe src="https://open.spotify.com/embed/track/6PwjJ58I4t7Mae9xfZ9l9v?utm_source=generator" width="100%"
+          height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen
+          style="border-radius:12px;" loading="lazy">
+        </iframe>
+        <iframe src="https://open.spotify.com/embed/track/0v1XpBHnsbkCn7iJ9Ucr1l?utm_source=generator" width="100%"
+          height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen
+          style="border-radius:12px;" loading="lazy">
+        </iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IhHtJSkbz8d7dGLXbW7HE"
+          width="100%" height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+        <iframe src="https://open.spotify.com/embed/track/4w2Yq2cklbssmUtUy5Vh6H?utm_source=generator" width="100%"
+          height="352" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen
+          style="border-radius:12px;" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+  <div class="botones-navegacion">
+    <button class="btn-anterior">Anterior</button>
+    <button class="btn-siguiente">Siguiente</button>
+  </div>
+
+  <script src="js/script_paguaga.js"></script>
+</body>
+
+</html>

@@ -59,6 +59,11 @@ typeWriterEffect() // renderizar letras cada 100 milisegundos
 ```js
 // script_paguaga.js
 
+aplicarDelay(tag, index) // Muestra las etiquetas de habilidades con un efecto de delay de 0.2segundos 
+mostrarPelicula(index) // Muestra en el slide la película con el índice enviado como parámetro
+cambiarPelicula(direccion) // Cambia la película activa por la anterior o la siguiente según la dirección
+verTrailer(url) // Abre en una ventana modal el trailer de la película enviado como parámetro
+cerrarModal() // Obtiene el video, limpia el src para detenerlo, y permite ocultar la ventana modal
 ```
 
 ```js
